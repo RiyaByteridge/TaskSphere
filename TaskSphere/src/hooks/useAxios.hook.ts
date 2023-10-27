@@ -11,6 +11,7 @@ export const  useAxios = ()=>{
         const res = await axios.get("https://dummyjson.com/products");
         const response = JSON.stringify(res);
         console.log(response);
+        console.log("Data sent")
       } catch (err) {
         console.log("Error Encountered");
       }
